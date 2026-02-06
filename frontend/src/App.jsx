@@ -11,7 +11,7 @@ import ChatInput from './components/ChatInput.jsx';
 // ]
 
 const sendMessage = async (message, sessionId) => {
-  const response = await fetch("https://chat-assistant-ztsa.onrender.com", {
+  const response = await fetch("https://chat-assistant-ztsa.onrender.com/chat/message", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
